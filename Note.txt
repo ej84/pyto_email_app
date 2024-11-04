@@ -1,0 +1,6 @@
+11-04-2024
+
+- Localhost:3000 can't be connected or detected by Clerk because they are not in the same server to communicate.
+
+- Webhook Proxy is an external service that sits in between the clerk(authentication service) and my server. It lives on my local laptop device. This webhook is used to expose a public
+URL and a public domain.(For example: https://test-webhook.cloudflare.com, etc)
