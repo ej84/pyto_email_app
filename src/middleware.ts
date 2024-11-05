@@ -1,6 +1,10 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isPublicRoute = createRouteMatcher(["/sign-in(.*)", "/sign-up(.*)", "/"]);
+const isPublicRoute = createRouteMatcher([
+  "/sign-in(.*)",
+  "/sign-up(.*)",
+  "/api/clerk/webhook(.*)",
+]);
 
 export default clerkMiddleware(async (auth, request) => {
   // 퍼블릭 페이지가 아닐 경우 강제로 유저를 로그인 페이지로 리디렉트 시킨다
