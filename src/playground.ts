@@ -2,7 +2,7 @@ import { db } from "./server/db";
 
 await db.user.create({
   data: {
-    email: "test@gmail.com",
+    email: "jmw9871@gmail.com",
     fName: "richard",
     lName: "jeong",
   },
